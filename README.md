@@ -17,14 +17,18 @@ Use with one of the following browser extensions:
 
 ### Google Chrome ###
 *	[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-*	Convert script to Google Chrome extension:
 
-	>1. Save the script (the `*.user.js` file) to your computer.
-	>2. In Chrome, go to _Tools > Extensions_.
-	>3. Drag/drop the user script file onto the _Extensions_ page.
 
 Release Notes
 =============
+
+Version 1.0.1
+-------------
+_Released 2014-07-23_
+
+*	Fixed issue where dropdown was not appearing in v12 site styles
+
+*	Changed method of add HTML classes from `className +=` to `classList.add()`
 
 Version 1.0
 -----------

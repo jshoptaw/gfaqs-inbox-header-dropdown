@@ -2,10 +2,10 @@
 // @name        GameFAQs "Inbox" Header Dropdown
 // @namespace   OTACON120
 // @author      OTACON120
-// @version     1.0
+// @version     1.0.1
 // @description Provide dropdown for "Inbox" link in header for various PM-related links
-// @updateURL   http://userscripts.org/scripts/source/468993.meta.js
-// @downloadURL http://userscripts.org/scripts/source/468993.user.js
+// @updateURL   https://greasyfork.org/scripts/605-gamefaqs-inbox-header-dropdown/code/GameFAQs%20%22Inbox%22%20Header%20Dropdown.meta.js
+// @downloadURL https://greasyfork.org/scripts/605-gamefaqs-inbox-header-dropdown/code/GameFAQs%20%22Inbox%22%20Header%20Dropdown.user.js
 // @website     http://otacon120.com/scripts/inbox-header-dropdown
 // @include     http://www.gamefaqs.com/*
 // @match       http://www.gamefaqs.com/*
@@ -36,8 +36,8 @@ var i,
 	muLinks      = mastheadUser.getElementsByTagName( 'a' );
 
 // Give unique ID to dropdown and give it the same class as other existing dropdowns
-inboxSubnav.id        = 'o120-inbox-subnav';
-inboxSubnav.className = 'masthead_mygames_subnav';
+inboxSubnav.id = 'o120-inbox-subnav';
+inboxSubnav.classList.add( 'masthead_mygames_subnav' );
 
 /**
  * Compiles subnavLinks array into an unordered list
@@ -48,7 +48,7 @@ function buildInboxSubnav( el ) {
 	var subnavItem     = document.createElement( 'li' ),
 		subnavItemLink = document.createElement( 'a' );
 
-	subnavItem.className = 'masthead_mygames_subnav_item';
+	subnavItem.classList.add( 'masthead_mygames_subnav_item' );
 
 	subnavItemLink.href      = el.url;
 	subnavItemLink.innerHTML = el.text;
@@ -63,12 +63,13 @@ function buildInboxSubnav( el ) {
  */
 for ( i = 0; i < muLinks.length; i++ ) {
 	if ( muLinks[ i ].href.indexOf( '/pm/' ) !== -1 ) {
-		inboxContain.id        = 'o120-inbox-drop';
-		inboxContain.className = 'masthead_mygames_drop';
+		inboxContain.id = 'o120-inbox-drop';
+		inboxContain.classList.add( 'masthead_mygames_drop' );
 
 		muLinks[ i ].parentNode.insertBefore( inboxContain, muLinks[ i ] );
 		inboxContain.appendChild( muLinks [ i ] );
 		muLinks[ i ].innerHTML += '<i class="icon icon-caret-down"></i>';
+		muLinks[ i ].classList.add( 'mygames' );
 		inboxContain.appendChild( inboxSubnav );
 		break;
 	}
