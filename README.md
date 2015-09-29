@@ -22,6 +22,12 @@ Use with one of the following browser extensions:
 Release Notes
 =============
 
+Version 1.0.2
+-------------
+_Released 2015-09-28_
+
+*	Fixed script breaking after recent GameFAQs update (URL in Inbox link changed slightly thus breaking script's detection)
+
 Version 1.0.1
 -------------
 _Released 2014-07-23_
