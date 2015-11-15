@@ -1,15 +1,15 @@
 ﻿// ==UserScript==
-// @name             GameFAQs "Inbox" Header Dropdown
-// @namespace        OTACON120
-// @author           OTACON120
-// @version          1.0.2
-// @description      Provide dropdown for "Inbox" link in header for various PM-related links
-// @updateURL        http://otacon120.com/user-script-files/meta/gamefaqs-related/inbox-header-dropdown/
-// @downloadURL      http://otacon120.com/user-script-files/script/gamefaqs-related/inbox-header-dropdown/GameFAQs_Inbox_Header_Dropdown.user.js
+// @name            GameFAQs "Inbox" Header Dropdown
+// @namespace       OTACON120
+// @author          OTACON120
+// @version         1.0.3
+// @description     Provide dropdown for "Inbox" link in header for various PM-related links
+// @updateURL       http://otacon120.com/user-script-files/meta/gamefaqs-related/inbox-header-dropdown/
+// @downloadURL     http://otacon120.com/user-script-files/script/gamefaqs-related/inbox-header-dropdown/GameFAQs_Inbox_Header_Dropdown.user.js
 // @website         http://otacon120.com/scripts/inbox-header-dropdown
 // @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=otacon120%40gmail%2ecom&lc=US&item_name=OTACON120&no_note=0&cn=Comments%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
-// @match            http://www.gamefaqs.com/*
-// @grant            none
+// @match           *://*.gamefaqs.com/*
+// @grant           none
 // ==/UserScript==
 var i,
 	inboxContain = document.createElement( 'span' ),
@@ -32,7 +32,7 @@ var i,
 			text: 'Settings'
 		}
 	],
-	mastheadUser = document.getElementsByClassName( 'masthead_user' )[0],
+	mastheadUser = document.getElementsByClassName( 'welcome' )[0].parentNode,
 	muLinks      = mastheadUser.getElementsByTagName( 'a' );
 
 // Give unique ID to dropdown and give it the same class as other existing dropdowns

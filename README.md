@@ -22,6 +22,12 @@ Use with one of the following browser extensions:
 Release Notes
 =============
 
+Version 1.0.3
+-------------
+_Release 2015-11-15_
+
+*	Fix bug caused by small GameFAQs HTML changes in header ("masthead_user" class added to another element)
+
 Version 1.0.2
 -------------
 _Released 2015-09-28_
