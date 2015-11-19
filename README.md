@@ -22,6 +22,12 @@ Use with one of the following browser extensions:
 Release Notes
 =============
 
+Version 1.0.4
+-------------
+_Release 2015-11-19_
+
+*	Fix bug caused by new site notifications
+
 Version 1.0.3
 -------------
 _Release 2015-11-15_
