@@ -2,7 +2,7 @@
 // @name            GameFAQs "Inbox" Header Dropdown
 // @namespace       OTACON120
 // @author          OTACON120
-// @version         1.0.4
+// @version         1.0.5
 // @description     Provide dropdown for "Inbox" link in header for various PM-related links
 // @updateURL       http://otacon120.com/user-script-files/meta/gamefaqs-related/inbox-header-dropdown/
 // @downloadURL     http://otacon120.com/user-script-files/script/gamefaqs-related/inbox-header-dropdown/GameFAQs_Inbox_Header_Dropdown.user.js
@@ -66,7 +66,7 @@ for ( i = 0; i < muLinks.length; i++ ) {
 
 		muLinks[ i ].parentNode.insertBefore( inboxContain, muLinks[ i ] );
 		inboxContain.appendChild( muLinks [ i ] );
-		muLinks[ i ].innerHTML += '<i class="icon icon-caret-down"></i>';
+		muLinks[ i ].innerHTML += ' <i class="fa fa-caret-down"></i>';
 		muLinks[ i ].classList.add( 'mygames' );
 		inboxContain.appendChild( inboxSubnav );
 		break;

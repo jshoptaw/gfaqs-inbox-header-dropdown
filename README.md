@@ -22,15 +22,21 @@ Use with one of the following browser extensions:
 Release Notes
 =============
 
+Version 1.0.5
+-------------
+_Released 2016-03-21)
+
+*	Updated to use newer FontAwesome classes after recent GameFAQs font update
+
 Version 1.0.4
 -------------
-_Release 2015-11-19_
+_Released 2015-11-19_
 
 *	Fix bug caused by new site notifications
 
 Version 1.0.3
 -------------
-_Release 2015-11-15_
+_Released 2015-11-15_
 
 *	Fix bug caused by small GameFAQs HTML changes in header ("masthead_user" class added to another element)
 
